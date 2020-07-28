@@ -1,0 +1,30 @@
+<div class="container">
+    <button class="btn-tambah" mat-raised-button color="primary" (click)="buatData()">Add Data</button>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Daftar Tamu</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item *ngFor="let item of user">
+            <img matListAvatar src="assets/avatar.jpg" alt="...">
+            <h3 matLine> {{item.nama}} </h3>
+            <p matLine>
+              <span> {{item.email}}</span>
+            </p>
+            <p matLine>
+              <span>{{item.alamat}}</span>
+            </p>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="detailData(item)">Detail</button>
+              <button mat-menu-item (click)="editData(item)">Edit</button>
+              <button mat-menu-item (click)="konfirmasiHapus(item.id)">Delete</button>
+            </mat-menu>          
+      </mat-list-item>
+    </mat-list>
+   </mat-card-content>
+  </mat-card>
+  </div>

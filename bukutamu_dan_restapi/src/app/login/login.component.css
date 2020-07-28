@@ -1,0 +1,23 @@
+.login-form-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  
+  .button-flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .example-form{
+    padding-top: 20px;
+  }
+  
+  mat-card {
+    width: 30%;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }

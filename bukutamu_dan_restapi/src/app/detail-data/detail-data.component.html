@@ -1,0 +1,27 @@
+<h3 mat-dialog-title>{{data.nama}}</h3>
+<div mat-dialog-content>
+<mat-list>
+    <h3 matSubheader>Detail Tamu</h3>
+    <mat-list-item>
+        <mat-icon matListIcon>email</mat-icon>
+        <h3 mat-line>{{data.email}}</h3>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon matListIcon>home</mat-icon>
+        <h3 mat-line>{{data.alamat}}</h3>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon matListIcon>place</mat-icon>
+        <h3 mat-line>{{data.kodepos}}</h3>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>
+</div>
+<mat-dialog-actions>
+    <span class="spacer"></span>
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
+
+  
